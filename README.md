@@ -7,6 +7,6 @@
 		<!-- you can also see the generated version here: -->
 		<!-- https://vaaski.dev/static-svg -->
 		<!---->
-    <img src="info.pdf" />
+    <img src="profile.svg" />
   </a>
 </div>
