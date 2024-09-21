@@ -1,6 +1,12 @@
-<svg width="300" height="100" xmlns="http://www.w3.org/2000/svg">
-    <rect width="100%" height="100%" fill="#f0f0f0" />
-    <text x="10" y="40" fill="black" font-family="Arial" font-size="14">
-        &lt;iframe src="https://angular.dev"&gt;&lt;/iframe&gt;
-    </text>
-</svg>
+<div align="center">
+  <a href="https://vaaski.dev">
+		<!---->
+		<!-- dig into how this was made here: -->
+		<!-- https://github.com/vaaski/vaaski.dev/blob/2024/components/svg-hero.server.vue -->
+		<!---->
+		<!-- you can also see the generated version here: -->
+		<!-- https://vaaski.dev/static-svg -->
+		<!---->
+    <img src="index.html" />
+  </a>
+</div>
