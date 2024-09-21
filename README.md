@@ -1,8 +1,12 @@
-<div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https://www.canva.com/design/DAGRYcC2ZWM/9_HmCxCtkNYQ9OtGkU-WCw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
+<div align="center">
+  <a href="https://vaaski.dev">
+		<!---->
+		<!-- dig into how this was made here: -->
+		<!-- https://github.com/vaaski/vaaski.dev/blob/2024/components/svg-hero.server.vue -->
+		<!---->
+		<!-- you can also see the generated version here: -->
+		<!-- https://vaaski.dev/static-svg -->
+		<!---->
+    <img src="info.pdf" />
+  </a>
 </div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGRYcC2ZWM&#x2F;9_HmCxCtkNYQ9OtGkU-WCw&#x2F;view?utm_content=DAGRYcC2ZWM&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Roshan Gedam</a> by Rgedam
