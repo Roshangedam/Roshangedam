@@ -1,16 +1,29 @@
-## Hi there 👋
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Website Renderer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scrolling */
+        }
+        iframe {
+            width: 100%;
+            height: 100vh; /* Full height of the viewport */
+            border: none; /* Remove borders */
+        }
+    </style>
+</head>
+<body>
+    <iframe id="dynamic-iframe" src=""></iframe>
 
-<!--
-**Roshangedam/Roshangedam** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    <script>
+        // Replace this URL with the one you want to render
+        const url = "https://angular.dev"; 
+        document.getElementById('dynamic-iframe').src = url;
+    </script>
+</body>
+</html>
