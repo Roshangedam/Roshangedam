@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshan Gedam - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background: #f5f5f5;
+            padding: 15px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 25px 35px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 2.5px solid #2c3e50;
+            padding-bottom: 12px;
+            margin-bottom: 18px;
+        }
+        
+        .header h1 {
+            font-size: 26px;
+            color: #2c3e50;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        
+        .header .title {
+            font-size: 13px;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 11px;
+            color: #555;
+        }
+        
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            color: #2980b9;
+        }
+        
+        .section {
+            margin-bottom: 16px;
+        }
+        
+        .section-title {
+            font-size: 14px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 3px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            font-weight: 700;
+        }
+        
+        .summary {
+            font-size: 11.5px;
+            line-height: 1.5;
+            color: #555;
+            text-align: justify;
+        }
+        
+        .job {
+            margin-bottom: 14px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 6px;
+        }
+        
+        .job-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+        
+        .company {
+            font-size: 12px;
+            color: #3498db;
+            font-weight: 600;
+        }
+        
+        .duration {
+            font-size: 11px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        .job-description {
+            font-size: 11px;
+            color: #666;
+            margin-bottom: 6px;
+            font-style: italic;
+        }
+        
+        .achievements {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .achievements li {
+            padding-left: 15px;
+            margin-bottom: 5px;
+            position: relative;
+            font-size: 11px;
+            line-height: 1.45;
+        }
+        
+        .achievements li:before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        
+        .skill-category {
+            margin-bottom: 6px;
+        }
+        
+        .skill-category-title {
+            font-size: 11px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 3px;
+        }
+        
+        .skill-items {
+            font-size: 10.5px;
+            color: #555;
+            line-height: 1.4;
+        }
+        
+        .project {
+            margin-bottom: 10px;
+        }
+        
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3px;
+        }
+        
+        .project-name {
+            font-size: 12px;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+        
+        .project-type {
+            font-size: 10px;
+            color: #3498db;
+            font-style: italic;
+        }
+        
+        .project-description {
+            font-size: 11px;
+            color: #555;
+            line-height: 1.45;
+            margin-bottom: 3px;
+        }
+        
+        .tech-stack {
+            font-size: 10px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        .education {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+        
+        .degree {
+            font-size: 12px;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+        
+        .university {
+            font-size: 11px;
+            color: #555;
+            margin-top: 2px;
+        }
+        
+        .highlights {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .highlights li {
+            padding-left: 15px;
+            margin-bottom: 5px;
+            position: relative;
+            font-size: 11px;
+            line-height: 1.45;
+        }
+        
+        .highlights li:before {
+            content: "★";
+            position: absolute;
+            left: 0;
+            color: #f39c12;
+            font-weight: bold;
+            font-size: 11px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Roshan Gedam</h1>
+            <div class="title">Software Engineer | Java Developer | Full-Stack Developer</div>
+            <div class="contact-info">
+                <span>📧 roshangedam1998@gmail.com</span>
+                <span>📱 +91 7028858669</span>
+                <span>🔗 <a href="https://www.linkedin.com/in/roshan-gedam-105210183" target="_blank">LinkedIn</a></span>
+                <span>💻 <a href="https://github.com/Roshangedam?tab=repositories" target="_blank">GitHub</a></span>
+                <span>🌐 <a href="https://sourceforge.net/u/roshangedam1998/profile/" target="_blank">SourceForge</a></span>
+                <span>📍 Nagpur, MH</span>
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="section">
+            <div class="section-title">Professional Summary</div>
+            <div class="summary">
+                Results-driven Software Engineer with 3+ years building scalable healthcare ERP solutions (HMIS) serving 10,000+ daily users across 5+ facilities. Expert in microservices architecture, Spring Boot, and third-party API integrations (Salesforce, Duty Roster). Delivered 40% performance improvements and 99.5% system uptime. Active open-source contributor with 100+ downloads across GitHub and Maven Central.
+            </div>
+        </div>
+
+        <!-- Key Achievements -->
+        <div class="section">
+            <div class="section-title">Key Achievements</div>
+            <ul class="highlights">
+                <li>Integrated Salesforce API for real-time patient data sync (NICU, Mother-Baby, Circumcision modules), processing 1,000+ records daily with 99% accuracy</li>
+                <li>Built third-party Duty Roster API integration enabling automated staff scheduling for 200+ doctors/nurses, reducing manual effort by 70%</li>
+                <li>Architected SNOMED CT integration processing 50,000+ medical records daily, reducing data errors by 45% and improving interoperability by 30%</li>
+                <li>Optimized database queries reducing API response time from 3.2s to 480ms (85% improvement), enhancing user experience significantly</li>
+                <li>Led client meetings and requirement gathering for HMIS enhancements, deployed 12+ feature releases on schedule with cross-functional teams</li>
+            </ul>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="section">
+            <div class="section-title">Professional Experience</div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Software Engineer</div>
+                        <div class="company"><a href="https://www.microproindia.com/" target="_blank"><img src="https://www.microproindia.com/wp-content/uploads/2023/06/cropped-favicon-2-32x32.png" alt="NetSpeed" style="height: 15px; vertical-align: middle; margin-right: 5px;">
+                            Micropro Software Solutions</a></div>
+                    </div>
+                    <div class="duration">May 2022 - Present (3+ Years)</div>
+                </div>
+                <div class="job-description">Healthcare Domain - HMIS (Hospital Management Information System)</div>
+                
+                <ul class="achievements">
+                    <li>Designed and integrated Salesforce API for bidirectional patient data synchronization across NICU, Mother-Baby, and Circumcision modules, automating data flow and eliminating 90% manual entry errors</li>
+                    
+                    <li>Developed REST API integration with third-party Duty Roster software, enabling automated scheduling for 200+ healthcare staff members and reducing administrative workload by 70%</li>
+                    
+                    <li>Led client requirement analysis sessions, collaborating directly with hospital administrators to gather specifications, prioritize features, and deploy customized HMIS enhancements serving 25,000+ patients monthly</li>
+                    
+                    <li>Engineered 6 core healthcare modules (Service Center, Nursing, Store, Pharmacy, Insurance, Frontdesk) using Java, Spring Boot, JSF, and JPA, handling 10,000+ concurrent users with sub-500ms response times</li>
+                    
+                    <li>Implemented SNOMED CT code integration module for standardized clinical terminology, processing 50,000+ records daily with 99.7% accuracy and ensuring HIPAA compliance</li>
+                    
+                    <li>Built secure RESTful APIs for authorized server data sync, improving data accuracy by 30% and reducing data discrepancies by 60% through validation layers</li>
+                    
+                    <li>Optimized PL/SQL stored procedures and implemented Redis caching, reducing report generation time from 15 minutes to 2 minutes (87% improvement)</li>
+                    
+                    <li>Achieved 85% code coverage through comprehensive JUnit and Mockito testing, reducing production bugs by 40% and ensuring system stability</li>
+                    
+                    <li>Containerized microservices using Docker and implemented CI/CD pipelines with GitLab, reducing deployment time from 2 hours to 15 minutes</li>
+                    
+                    <li>Integrated SOAP/REST APIs for third-party insurance verification systems, automating claim processing and reducing turnaround time by 50%</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="section">
+            <div class="section-title">Technical Skills</div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-title">Languages & Frameworks</div>
+                    <div class="skill-items">Java, J2EE, Spring Boot, Hibernate, JPA, JSF, Angular, JavaScript, Python, C/C++</div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-title">Cloud & DevOps</div>
+                    <div class="skill-items">GCP, Docker, Kubernetes (Learning), Git, GitLab, GitHub, CI/CD, Jenkins (Familiar)</div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-title">Databases & Caching</div>
+                    <div class="skill-items">MySQL, PL/SQL, PostgreSQL, Redis, MongoDB (Learning)</div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-title">Architecture & APIs</div>
+                    <div class="skill-items">Microservices, RESTful APIs, SOAP, Salesforce API, Third-Party Integrations, MVC, Event-Driven</div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-title">Testing & Quality</div>
+                    <div class="skill-items">JUnit, Mockito, Integration Testing, Performance Testing, Code Reviews</div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-title">Tools & Methodologies</div>
+                    <div class="skill-items">Kafka, Maven, SOLID Principles, Design Patterns, Agile/Scrum, Electron.js</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="section">
+            <div class="section-title">Open Source Projects</div>
+            
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name">
+                        <a href="https://sourceforge.net/projects/netspeed" target="_blank" style="text-decoration: ; color: #3498db;">
+                            <img src="https://a.fsdn.com/allura/p/netspeed-2-0/icon?1c39b6743607586431cb2400a5afda618be50c0c18ce0de3fe7ee92e2524cc49?&w=90" alt="NetSpeed" style="height: 14px; vertical-align: middle; margin-right: 5px;">NetSpeed - Internet Speed Monitor
+                        </a>
+                    </div>
+                    <div class="project-type">1,00+ Downloads | <a href="https://github.com/Roshangedam/netSpeed" target="_blank">GitHub</a> & <a href="https://sourceforge.net/projects/netspeed" target="_blank">SourceForge</a></div>
+                </div>
+                <div class="project-description">
+                    Java-based real-time network monitoring widget for Windows with customizable UI and minimal resource usage (&lt;50MB RAM). Features live upload/download tracking with GitHub.
+                </div>
+                <div class="tech-stack"><strong>Tech:</strong> Java, Swing, OSHI Library, Windows API</div>
+            </div>
+            
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><a href="https://mvnrepository.com/artifact/io.github.roshangedam/jayomail" target="_blank" style="text-decoration: ; color: #3498db;">
+                        <img src="https://mvnrepository.com/img/a3eb9c45f6587bbfb3a9e29cb0e1c605" alt="JayoMail" style="height: 15px; vertical-align: middle; margin-right: 5px;">JayoMail - Email Utility Library</a></div>
+                    <div class="project-type">10+ Downloads | <a href="https://mvnrepository.com/artifact/io.github.roshangedam/jayomail" target="_blank">Maven Central</a> | <a href="https://github.com/Roshangedam/jayomail" target="_blank">GitHub</a></div>
+                </div>
+                <div class="project-description">
+                    Open-source Java email library with modular architecture supporting multiple providers (SMTP, Gmail, Outlook). Published on Maven Central with attachment support and HTML templates.
+                </div>
+                <div class="tech-stack"><strong>Tech:</strong> Java, Maven, JavaMail API, Design Patterns</div>
+            </div>
+            
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><a href="https://pypi.org/project/payomail/" target="_blank" style="text-decoration: ; color: #3498db;">
+                        <img src="https://pypi.org/static/images/logo-small.8998e9d1.svg" alt="PayoMail" style="height: 13px; vertical-align: middle; margin-right: 5px;">PayoMail - Python Email Utility</a></div>
+                    <div class="project-type"><a href="https://pypi.org/project/payomail/" target="_blank">PyPI</a> | <a href="https://github.com/Roshangedam/payomail" target="_blank">GitHub</a></div>
+                </div>
+                <div class="project-description">
+                    Flexible Python package for email operations with strategy pattern, unified interface for multiple providers, and 90% test coverage.
+                </div>
+                <div class="tech-stack"><strong>Tech:</strong> Python, PyPI, SMTP, Strategy Pattern</div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <div class="section-title">Education & Certifications</div>
+            <div class="education">
+                <div>
+                    <div class="degree">Bachelor of Science (B.Sc) in Computer Science</div>
+                    <div class="university">Tai Golwalkar Mahavidyalay, Ramtek | RTMNU Nagpur University</div>
+                </div>
+                <div class="duration">2016 - 2019</div>
+            </div>
+            <div class="project-description" style="margin-top: 6px;">
+                <strong>Pursuing:</strong>Kubernetes Fundamentals , MongoDB
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
